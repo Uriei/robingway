@@ -6,8 +6,8 @@ export interface IStar {
   name: string;
   nameShort?: string;
   nameRole?: string;
-  redAlerts?: IRedAlertType[];
-  weather?: IWeatherData[];
+  redAlerts: IRedAlertType[];
+  weather: IWeatherData[];
   timeRestrictedMissions?: ITimeRestrictedMission;
 }
 

@@ -90,6 +90,8 @@ export function formatJobTimersForDiscord(star: string, jobs: string[]): Array<A
   for (const job of jobs) {
     const jobTimers: ITimeRestrictedMissionJob[] = starRestrictedMissions[job];
     for (const timer of jobTimers) {
+      if (!timer.eorzeaTime) continue;
+
       const eorzeaTime = timer.eorzeaTime;
       const needsBaseUnlock = timer.needsBaseUnlock;
 
