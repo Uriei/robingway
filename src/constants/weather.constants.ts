@@ -87,7 +87,7 @@ export const WEATHER: { [star: string]: Array<IWeatherData> } = {
       rate: 20,
       emoji: WEATHER_EMOJIS.CLOUDS,
       name: "Clouds",
-      important: false,
+      important: true,
     },
     {
       rate: 80,
@@ -99,7 +99,7 @@ export const WEATHER: { [star: string]: Array<IWeatherData> } = {
       rate: 100,
       emoji: WEATHER_EMOJIS.CLEAR_SKIES,
       name: "Clear Skies",
-      important: false,
+      important: true,
     },
   ],
 };
