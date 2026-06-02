@@ -1,5 +1,5 @@
 {
-  "name": "sinus_bot",
+  "name": "rovingway",
   "version": "1.0.0",
   "scripts": {
     "prebuild": "npm run clean",
