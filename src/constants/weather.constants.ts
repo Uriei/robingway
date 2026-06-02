@@ -4,10 +4,12 @@ import { STARS } from "./stars.constants";
 export const WEATHER_EMOJIS = {
   ANNEALING_WINDS: "<:annealingwinds:1412459057410740274>",
   ASTROMAGNETIC_STORM: "<:astromagneticstorm:1369563775719575624>",
+  AURORAL_FLARE: "<:auroralflare:1511353936278323291>",
   BUBBLE_BLOOM: "<:bubblebloom:1465657179762851951>",
   CLEAR_SKIES: "<:clearskies:1465682394634780808>",
   CLOUDS: "<:clouds:1412390614875639808>",
   FAIR_SKIES: "<:fairskies:1369561680278978631>",
+  FLORACANE: "<:floracane:1511354090934763601>",
   GALEFORCE_WINDS: "<:galeforcewinds:1465720206537134133>",
   GLASSRAIN: "<:glassrain:1412771742128013433>",
   GRAVITATIONAL_ANOMALY: "<:gravitationalanomaly:1465661474188951552>",
@@ -81,6 +83,18 @@ export const WEATHER: { [star: string]: Array<IWeatherData> } = {
     },
   ],
   [STARS.AUXESIA]: [
+    {
+      rate: 20,
+      emoji: WEATHER_EMOJIS.CLOUDS,
+      name: "Clouds",
+      important: false,
+    },
+    {
+      rate: 80,
+      emoji: WEATHER_EMOJIS.FAIR_SKIES,
+      name: "Fair Skies",
+      important: false,
+    },
     {
       rate: 100,
       emoji: WEATHER_EMOJIS.CLEAR_SKIES,

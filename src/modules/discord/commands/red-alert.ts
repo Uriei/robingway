@@ -320,7 +320,11 @@ function addFalseAlarmButton(counter = 0) {
     .setStyle(ButtonStyle.Secondary);
 }
 function addHintsButton(redAlertType: IRedAlertType) {
-  if (redAlertType?.variants && redAlertType.variants.length > 1) {
+  if (
+    redAlertType?.variants &&
+    redAlertType.variants.length > 1 &&
+    redAlertType.variants.find((v) => v.hints && Object.values(v.hints).length > 0 && Object.values(v.hints).find((h) => h))
+  ) {
     return new ButtonBuilder().setCustomId("hints").setLabel(`NPC hints`).setStyle(ButtonStyle.Primary);
   }
   return null;

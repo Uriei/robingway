@@ -3,7 +3,7 @@ import { TIMERESTRICTED_MISSIONS } from "./jobs.constants";
 import { RED_ALERTS } from "./red-alerts.constants";
 import { WEATHER } from "./weather.constants";
 
-export enum STARS {
+export const enum STARS {
   SINUS_ARDORUM = "SINUS_ARDORUM",
   PHAENNA = "PHAENNA",
   OIZYS = "OIZYS",

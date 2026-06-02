@@ -14,7 +14,7 @@ import {
 } from "discord.js";
 import { TESTING_ENV } from "../../../constants/constants";
 import { JOB_EMOJIS, JOB_NAMES, JOBS } from "../../../constants/jobs.constants";
-import { STARS, STARS_DATA } from "../../../constants/stars.constants";
+import { STARS_DATA } from "../../../constants/stars.constants";
 import { formatJobTimersForDiscord, formatJobTimersMacroAlarm, generateMessageEmbed } from "../../utils";
 import { Discord } from "../discord";
 
@@ -27,7 +27,7 @@ export default {
         .setName("star")
         .setDescription("Select Star Job timers")
         .setRequired(true)
-        .setChoices(Object.values(STARS).map((s) => ({ name: STARS_DATA[s].name, value: s }))),
+        .setChoices(Object.keys(STARS_DATA).map((star) => ({ name: STARS_DATA[star].name, value: star }))),
     ),
   execute: {
     async execute(interaction: ChatInputCommandInteraction) {
