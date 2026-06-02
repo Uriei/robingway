@@ -423,4 +423,116 @@ export const TIMERESTRICTED_MISSIONS: ITimeRestrictedMissions = {
       },
     ],
   },
+  AUXESIA: {
+    [JOBS.ALC]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.ARM]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.BSM]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.BTN]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.CRP]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.CUL]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.FSH]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.GSM]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.LTW]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.MIN]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+    [JOBS.WVR]: [
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+      {
+        eorzeaTime: "",
+        needsBaseUnlock: false,
+      },
+    ],
+  },
 };

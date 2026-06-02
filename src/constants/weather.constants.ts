@@ -1,4 +1,5 @@
 import { IWeatherData } from "../modules/models/weather-report.model";
+import { STARS } from "./stars.constants";
 
 export const WEATHER_EMOJIS = {
   ANNEALING_WINDS: "<:annealingwinds:1412459057410740274>",
@@ -17,63 +18,74 @@ export const WEATHER_EMOJIS = {
   THUNDERSTORMS: "<:thunderstorm:1412394500319477840>",
   UMBRAL_WIND: "<:umbralwind:1369561668132274177>",
 };
-export const SINUS_ARDORUM_WEATHER: Array<IWeatherData> = [
-  {
-    rate: 15,
-    emoji: WEATHER_EMOJIS.MOON_DUST,
-    name: "Moon Dust",
-    important: true,
-  },
-  {
-    rate: 85,
-    emoji: WEATHER_EMOJIS.FAIR_SKIES,
-    name: "Fair Skies",
-    important: false,
-  },
-  {
-    rate: 100,
-    emoji: WEATHER_EMOJIS.UMBRAL_WIND,
-    name: "Umbral Wind",
-    important: true,
-  },
-];
-export const PHAENNA_WEATHER: Array<IWeatherData> = [
-  {
-    rate: 60,
-    emoji: WEATHER_EMOJIS.FAIR_SKIES,
-    name: "Fair Skies",
-    important: false,
-  },
-  {
-    rate: 80,
-    emoji: WEATHER_EMOJIS.CLOUDS,
-    name: "Clouds",
-    important: true,
-  },
-  {
-    rate: 100,
-    emoji: WEATHER_EMOJIS.RAIN,
-    name: "Rain",
-    important: true,
-  },
-];
-export const OIZYS_WEATHER: Array<IWeatherData> = [
-  {
-    rate: 20,
-    emoji: WEATHER_EMOJIS.CLOUDS,
-    name: "Clouds",
-    important: true,
-  },
-  {
-    rate: 80,
-    emoji: WEATHER_EMOJIS.FAIR_SKIES,
-    name: "Fair Skies",
-    important: false,
-  },
-  {
-    rate: 100,
-    emoji: WEATHER_EMOJIS.CLEAR_SKIES,
-    name: "Clear Skies",
-    important: true,
-  },
-];
+
+export const WEATHER: { [star: string]: Array<IWeatherData> } = {
+  [STARS.SINUS_ARDORUM]: [
+    {
+      rate: 15,
+      emoji: WEATHER_EMOJIS.MOON_DUST,
+      name: "Moon Dust",
+      important: true,
+    },
+    {
+      rate: 85,
+      emoji: WEATHER_EMOJIS.FAIR_SKIES,
+      name: "Fair Skies",
+      important: false,
+    },
+    {
+      rate: 100,
+      emoji: WEATHER_EMOJIS.UMBRAL_WIND,
+      name: "Umbral Wind",
+      important: true,
+    },
+  ],
+  [STARS.PHAENNA]: [
+    {
+      rate: 60,
+      emoji: WEATHER_EMOJIS.FAIR_SKIES,
+      name: "Fair Skies",
+      important: false,
+    },
+    {
+      rate: 80,
+      emoji: WEATHER_EMOJIS.CLOUDS,
+      name: "Clouds",
+      important: true,
+    },
+    {
+      rate: 100,
+      emoji: WEATHER_EMOJIS.RAIN,
+      name: "Rain",
+      important: true,
+    },
+  ],
+  [STARS.OIZYS]: [
+    {
+      rate: 20,
+      emoji: WEATHER_EMOJIS.CLOUDS,
+      name: "Clouds",
+      important: true,
+    },
+    {
+      rate: 80,
+      emoji: WEATHER_EMOJIS.FAIR_SKIES,
+      name: "Fair Skies",
+      important: false,
+    },
+    {
+      rate: 100,
+      emoji: WEATHER_EMOJIS.CLEAR_SKIES,
+      name: "Clear Skies",
+      important: true,
+    },
+  ],
+  [STARS.AUXESIA]: [
+    {
+      rate: 100,
+      emoji: WEATHER_EMOJIS.CLEAR_SKIES,
+      name: "Clear Skies",
+      important: false,
+    },
+  ],
+};
