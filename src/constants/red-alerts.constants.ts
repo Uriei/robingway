@@ -463,12 +463,12 @@ export const RED_ALERTS: { [star: string]: Array<IRedAlertType> } = {
         {
           name: "Variant A",
           classes: [JOBS.CUL, JOBS.FSH, JOBS.BTN, JOBS.BSM, JOBS.LTW],
-          image: path.resolve("./assets/red-alerts/oizys/ra-auroralflare-a.png"),
+          image: path.resolve("./assets/red-alerts/auxesia/ra-auroralflare-a.png"),
         },
         {
           name: "Variant B",
           classes: [JOBS.CRP, JOBS.WVR, JOBS.ALC, JOBS.MIN, JOBS.BSM, JOBS.CUL],
-          image: path.resolve("./assets/red-alerts/oizys/ra-auroralflare-b.png"),
+          image: path.resolve("./assets/red-alerts/auxesia/ra-auroralflare-b.png"),
         },
       ],
     },
@@ -480,12 +480,12 @@ export const RED_ALERTS: { [star: string]: Array<IRedAlertType> } = {
         {
           name: "Variant A",
           classes: [JOBS.ARM, JOBS.GSM, JOBS.MIN, JOBS.CRP, JOBS.ALC, JOBS.FSH],
-          image: path.resolve("./assets/red-alerts/oizys/ra-floracane-a.png"),
+          image: path.resolve("./assets/red-alerts/auxesia/ra-floracane-a.png"),
         },
         {
           name: "Variant B",
           classes: [JOBS.ARM, JOBS.LTW, JOBS.BTN, JOBS.GSM, JOBS.WVR],
-          image: path.resolve("./assets/red-alerts/oizys/ra-floracane-b.png"),
+          image: path.resolve("./assets/red-alerts/auxesia/ra-floracane-b.png"),
         },
       ],
     },
