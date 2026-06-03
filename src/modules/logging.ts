@@ -3,7 +3,7 @@ import { format } from "date-fns";
 export type LOG_LEVEL = "ERROR" | "WARN" | "INFO" | "DEBUG";
 
 export class Log {
-  private static readonly TIMESTAMP_FORMAT = "yyyy-MM-dd_HH:mm:ss.SSSS";
+  private static readonly TIMESTAMP_FORMAT = "yyyy-MM-dd_HH:mm:ss.SSSS XX";
   private static padding: Array<number> = [];
 
   private static getPaddedString(msg: string, index: number) {
