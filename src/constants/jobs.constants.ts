@@ -426,111 +426,67 @@ export const TIMERESTRICTED_MISSIONS: ITimeRestrictedMissions = {
   AUXESIA: {
     [JOBS.ALC]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "0400",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.ARM]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "2000",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.BSM]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "2000",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.BTN]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "0800",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.CRP]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "1200",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.CUL]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "0400",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.FSH]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "1600",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.GSM]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "2000",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.LTW]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "1200",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.MIN]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "0000",
         needsBaseUnlock: false,
       },
     ],
     [JOBS.WVR]: [
       {
-        eorzeaTime: "",
-        needsBaseUnlock: false,
-      },
-      {
-        eorzeaTime: "",
+        eorzeaTime: "1200",
         needsBaseUnlock: false,
       },
     ],
