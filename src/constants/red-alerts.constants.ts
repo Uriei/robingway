@@ -464,11 +464,47 @@ export const RED_ALERTS: { [star: string]: Array<IRedAlertType> } = {
           name: "Variant A",
           classes: [JOBS.CUL, JOBS.FSH, JOBS.BTN, JOBS.BSM, JOBS.LTW],
           image: path.resolve("./assets/red-alerts/auxesia/ra-auroralflare-a.png"),
+          hints: {
+            "en-US": [
+              "Auroral flare patterns detected!",
+              "It always plays havoc with the vegetation...",
+              "Things are about to take an interesting turn...",
+            ],
+            fr: [
+              "Nous avons détecté des signes d'ondée lumineuse!",
+              "Il va falloir s'attendre à ce que la végétation devienne incrontrôlable!",
+              "Ça risque d'être intéressant...",
+            ],
+            de: [
+              "Anzeichen auf einen Chlorophyllschein wurden verzeichnet!",
+              "Wir sollten uns auf wilde Wuchergewächse einstellen!",
+              "Da zieht 'was auf...",
+            ],
+            ja: ["幻極光の予兆が\n観測されました！", "植物の異常成長が\n起こりそうですね", "環境が一時的に\n激変するかもな"],
+          },
         },
         {
           name: "Variant B",
           classes: [JOBS.CRP, JOBS.WVR, JOBS.ALC, JOBS.MIN, JOBS.BSM, JOBS.CUL],
           image: path.resolve("./assets/red-alerts/auxesia/ra-auroralflare-b.png"),
+          hints: {
+            "en-US": [
+              "We're detecting increased auroral activity!",
+              "So the flares quicken plant growth...",
+              "Don't get complacent, folks!",
+            ],
+            fr: [
+              "Ondée lumineuse en approche!",
+              "Une lumière qui stimule la croissance des plantes...",
+              "Je vous conseille de rester sur vos gardes.",
+            ],
+            de: [
+              "Anzeichen auf einen Chlorophyllschein wurden verzeichnet!",
+              "Lichtschein, der Florawachstum fördert...",
+              "Bleibt auf der Hut!",
+            ],
+            ja: ["幻極光の予兆が\n観測されました！", "植物を成長させる光か…", "警戒を怠るなよ！"],
+          },
         },
       ],
     },
@@ -481,11 +517,51 @@ export const RED_ALERTS: { [star: string]: Array<IRedAlertType> } = {
           name: "Variant A",
           classes: [JOBS.ARM, JOBS.GSM, JOBS.MIN, JOBS.CRP, JOBS.ALC, JOBS.FSH],
           image: path.resolve("./assets/red-alerts/auxesia/ra-floracane-a.png"),
+          hints: {
+            "en-US": [
+              "Floracane incoming!",
+              "We believe it to be a mechanism for eliminating foreign matter and preserving the natural environment.",
+              "All contributors in the field, evacuate immediately!",
+            ],
+            fr: [
+              "Une brise de pétales est en train de se lever!",
+              "Un protocole de sécurité visant à purger la planète de tout corps étranger...",
+              "Donnez l'ordre de repli aux travailleurs les plus éloignés!",
+            ],
+            de: [
+              "Ein Blütengestöber braut sich zusammen!",
+              "Ein Sicherheitsmechanismus, um Fremdkörper vom Planeten zu löschen...",
+              "Unsere Mitglieder weiter draußen sollen evakuieren!",
+            ],
+            ja: ["幻花風の予兆を確認！", "異物を除去する\n環境維持機構か…", "遠方の作業者に\n退避指示を！"],
+          },
         },
         {
           name: "Variant B",
           classes: [JOBS.ARM, JOBS.LTW, JOBS.BTN, JOBS.GSM, JOBS.WVR],
           image: path.resolve("./assets/red-alerts/auxesia/ra-floracane-b.png"),
+          hints: {
+            "en-US": [
+              "Floracane incoming!",
+              "I won't deny it's a beautiful sight. I just wish it didn't mess with our instruments...",
+              "Microbial activity is causing widespread malfunctions!",
+            ],
+            fr: [
+              "Une brise de pétales est en train de se lever!",
+              "C'est joli, pourtant... Dommage que ça fasse com-plè-te-ment disjoncter nos appareils.",
+              "C'est une augmentation rapide du nombre de micro-organismes qui provoque les nombreuses défaillances!",
+            ],
+            de: [
+              "Ein Blütengestöber braut sich zusammen!",
+              "Schön anzusehen ist so ein Gestöber ja... Zumindest bis es alles durcheinanderbringt...",
+              "... und die Mikroben für zahlreiche Ausfälle sorgen!",
+            ],
+            ja: [
+              "幻花風の予兆を確認！",
+              "見た目は綺麗なんだがな…\n機器類が狂うから厄介だ",
+              "活発化した微生物による\n回路への影響とのことだ",
+            ],
+          },
         },
       ],
     },
