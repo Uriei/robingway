@@ -12,7 +12,13 @@ class Discord {
   }
 
   private static instance: Discord;
-  private client: Client;
+  private _client: Client;
+  public get client(): Client {
+    return this._client;
+  }
+  private set client(value: Client) {
+    this._client = value;
+  }
   private slashCommands: {
     [key: string]: {
       data: any;
@@ -34,8 +40,9 @@ class Discord {
 
   private constructor() {
     this.getCredentialInfo();
-    this.client = new Client({ intents: [GatewayIntentBits.Guilds], allowedMentions: { parse: ["users", "roles"], repliedUser: true } });
+    this._client = new Client({ intents: [GatewayIntentBits.Guilds], allowedMentions: { parse: ["users", "roles"], repliedUser: true } });
     this.client.on("warn", Log.warning);
+    this.client.on("error", Log.error);
     this.slashCommands = {};
     this.slashCommandsAdmin = {};
     this.fillSlashCommands();

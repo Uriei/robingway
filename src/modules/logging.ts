@@ -9,9 +9,9 @@ export class Log {
   private static getPaddedString(msg: string, index: number) {
     let padding = this.padding[index] || 0;
     msg = ` ${msg} `;
-    padding = msg.toString().length > padding ? msg.toString().length : padding;
-    this.padding[index] = padding;
-    return msg.padEnd(padding);
+    padding = Math.max(padding, msg.toString().length);
+    this.padding[index] = padding > 42 ? 42 : padding;
+    return msg.padEnd(this.padding[index]);
   }
 
   private static getTimeStamp() {
